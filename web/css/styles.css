@@ -1,0 +1,522 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    width: 100%;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.itemmenu {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+
+.menu a {
+    color: gray;
+    text-decoration: none;
+    margin-left: 30px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu .m-cliente {
+    border: 3px solid #ff8300;
+    padding: 0 30px;
+    border-radius: 12px;
+}
+.menu .m-conductor {
+    border: 3px solid #ff8300;
+    padding: 0 30px;
+    border-radius: 12px;
+}
+
+.menu .m-conductor:hover , .menu .m-cliente:hover{
+    background-color: #ff8300;
+    color: white;
+}
+
+.menu a:hover {
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.hero-botones a{
+    text-decoration: none;
+    background-color: #ff8300;
+    color: white;
+    padding: 12px;
+    margin: 0px 20px;
+    border-radius: 15px;
+}
+.hero-botones a:hover{
+    background-color: #d5750f;
+}
+
+.imagenprincipal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 15%;
+    right: 35%;
+    left: 3%;
+    text-align: start;
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+    line-height: 1.6;
+    font-family: "Prompt", sans-serif;
+}
+span{
+    background-color: #ff8300;
+    border-radius: 8px;
+}
+
+.overlay .hero-botones {
+    margin-top: 170px;
+}
+
+.title-cards-section h2 {
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Prompt", sans-serif;
+
+}
+
+.cards-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 430px;
+    text-align: center;
+    margin: 50px 15px;
+    transition: transform 0.4s ease-out, box-shadow 0.3s ease-out;
+}
+
+
+.card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: start;
+}
+
+.card-content h3 {
+    color: #ff8300;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 10px 0;
+    transition: border 0.3s ease-out, padding 0.4s ease-out;
+    font-family: "Prompt", sans-serif;
+}
+
+.card-content p {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    color: #555;
+
+
+}
+
+.card-mini-item {
+    display: flex;
+    text-align: center;
+}
+
+.card-mini-item p {
+    font-size: 15px;
+    margin: 2px 12px 2px 1px;
+    padding: 5px;
+    color: black;
+    border: 3px solid #ff8300;
+    border-radius: 6px;
+}
+
+.card:hover {
+    box-shadow: 5px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.06);
+
+    .card-content h3 {
+        border-bottom: 5px solid #ff8300
+    }
+
+}
+
+.title-card-seguridad h2 {
+    text-align: center;
+    margin: 60px 0px;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Prompt", sans-serif;
+}
+
+
+.title-card-seguridad p {
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 25px;
+    color: black;
+}
+
+.cards-seguridad {
+    display: flex;
+    padding: 15px;
+    margin: 70px 20px;
+    justify-content: center;
+}
+
+.card-seguridad {
+    width: 420px;
+    margin: 10px 20px;
+}
+
+.card-seguridad-content i {
+    color: #ff8300;
+    font-size: 50px;
+}
+
+.card-seguridad-content h5 {
+    font-size: 21px;
+}
+
+.card-seguridad-content p {
+    font-size: 20px;
+}
+
+.visual-conductor-section{
+    margin: 150px 0;
+}
+.hero-visual-conductor {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.imagen-hero-visual {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.overlay-2 {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-30%, -50%);
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+    line-height: 1.6;
+    font-family: "Prompt", sans-serif;
+}
+.overlay-2 a{
+    text-decoration: none;
+    background-color: #ff8300;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+.overlay-2 a:hover{
+    background-color: #d5750f;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-section-1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo-footer{
+    width: 180px;
+    object-fit: cover;
+    height: auto;
+}
+
+.footer-section-2{
+    flex: 1;
+    text-align: start;
+    padding: 10px 0;
+}
+
+
+
+.redes {
+    margin-top: 15px;
+    font-size: 40px;
+    flex-basis: 100%;
+    padding: 20px;
+}
+
+.redes a {
+    margin-right: 4px;
+    color: white;
+    background-color: #ff8300;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.copyright {
+    margin-top: 10px;
+    flex-basis: 100%;
+}
+
+.footer-section-2 h4 {
+    font-size: 20px;
+}
+
+.footer-section-2 a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 6px 0;
+    line-height: 2.5;
+
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+
+.hero-cliente {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.overlay-cliente {
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    font-family: "Prompt", sans-serif;
+}
+
+.overlay-title-cliente {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    right: 40%;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Prompt", sans-serif;
+}
+
+.overlay-cliente .hero-botones {
+    margin-top: 170px;
+}
+
+.formcliente{
+    padding: 30px;
+}
+
+form h2{
+    font-size: 35px;
+    color: #ff8300;
+    font-weight: 700;
+    text-align: center;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 4px solid #ff8300;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+}
+
+form p{
+    text-align: start;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+form .mensaje{
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+    width: 90%;
+    padding: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="number"]:hover{
+    background-color: #d1d1d1;
+}
+
+input[type="submit"] {
+
+    width: 50%;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #ff8300;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #d5750f;
+}
+
+.cliente-section{
+    margin: 100px 0 0 0;
+}
+
+.crud{
+    height: 80px;
+    width: 100%;
+    margin-top: 90px;
+    background-color: #ff8300;
+    padding: 25px 0 25px 0;
+}
+.item-crud{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.item-crud a{
+    margin: 20px;
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+
+}
+.item-crud a:hover{
+    color: black;
+    border-bottom: 3px solid black;
+
+}
+.item-crud h3{
+    margin-right: 120px;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    font-family: "prompt";
+}
+
+.mensaje {
+    color: gray;
+
+}
+
+table {
+    width: 99%;
+    height: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 20px 5px 20px 5px;
+   
+}
+table, th, td {
+    border: 3px solid black;
+}
+th, td {
+    font-size: 20px;
+    text-align: left;
+    padding: 5px;
+}
+th {
+    text-align: center;
+    color: white;
+    background-color: #ff8300;
+    font-weight: bold;
+}
+td{
+    color: black;
+}
